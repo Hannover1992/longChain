@@ -2,5 +2,5 @@
 
 #global variables
 
-chunk=200
-overlap=0
+chunk=1000
+overlap=500
