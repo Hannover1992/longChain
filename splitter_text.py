@@ -8,6 +8,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.document_loaders import TextLoader
 from langchain.document_loaders import TextLoader
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 # llm = OpenAI(temperature=0.9)
