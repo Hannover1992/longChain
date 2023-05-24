@@ -20,7 +20,7 @@ def load_and_split_file(filename, chunk_size=5000):
     # Create a list of Document objects, each containing a chunk of text
     return [Document(text[i:i + chunk_size]) for i in range(0, len(text), chunk_size)]
 
-text_data_chunks = load_and_split_file('all_txt.txt')
+text_data_chunks = load_and_split_file('Wissenschaftliche_Methoden/all_txt.txt')
 
 store = Chroma.from_documents(text_data_chunks, collection_name='Wissenschaftliche Methoden')
 

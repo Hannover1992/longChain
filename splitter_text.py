@@ -30,7 +30,7 @@ def load_data(filename, chunk_size=5000):
 embeddings = OpenAIEmbeddings()
 
 from langchain.text_splitter import PythonCodeTextSplitter
-with open('all_txt.txt', 'r') as file:
+with open('Wissenschaftliche_Methoden/all_txt.txt', 'r') as file:
     text = file.read()
 
 # Split text into words
