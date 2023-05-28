@@ -26,6 +26,8 @@ chroma_client = chromadb.Client(Settings(
 collection = chroma_client.create_collection(name="WisMet")
 
 
+
+
 ids = [str(i) for i in range(len(embeddings))]
 collection.add(ids=ids, embeddings=embeddings, documents=splitted_text, increment_index=True)
 
