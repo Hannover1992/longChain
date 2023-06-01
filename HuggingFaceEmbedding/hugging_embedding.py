@@ -9,8 +9,15 @@ from sentence_transformers import SentenceTransformer
 
 loader = TextLoader('all_txt.txt')
 documents = loader.load()
-text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+text_splitter = CharacterTextSplitter(
+    separator = "\n\n",
+    chunk_size = 1000,
+    chunk_overlap  = 200,
+    length_function = len,
+)
 docs = text_splitter.split_documents(documents)
+
+
 
 # embeddings = OpenAIEmbeddings()
 # embeddings = SentenceTransformer('all-MiniLM-L6-v2')

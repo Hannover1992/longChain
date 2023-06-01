@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer, util
 import chromadb
 from chromadb.config import Settings
 
-with open('all_txt.txt', 'r') as file:
+with open('../all_txt.txt', 'r') as file:
     text = file.read()
 
 # Split text into words
